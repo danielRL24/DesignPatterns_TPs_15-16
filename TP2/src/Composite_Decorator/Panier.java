@@ -6,10 +6,17 @@ public class Panier implements AbstractFruit{
 
     private ArrayList<AbstractFruit> fruits;
 
+    /**
+     * Constructeur
+     */
     public Panier(){
         fruits = new ArrayList<>();
     }
 
+    /**
+     * Ajout d'un fruit (ou panier)
+     * @param f : fruit ou panier
+     */
     public void addFruit(AbstractFruit f) {
         fruits.add(f);
     }

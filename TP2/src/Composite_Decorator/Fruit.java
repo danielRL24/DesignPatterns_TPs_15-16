@@ -5,6 +5,11 @@ public class Fruit implements AbstractFruit {
     private String nom;
     private boolean pepin;
 
+    /**
+     * Constructeur
+     * @param n : Nom du fruit
+     * @param p : Pepin ou pas
+     */
     public Fruit(String n, boolean p) {
         nom = n;
         pepin = p;

@@ -2,6 +2,10 @@ package Composite_Decorator;
 
 public class DecoratorAccolade extends FruitDecorator {
 
+    /**
+     * Constructeur
+     * @param f : AbstractFruit à décorer (fruit ou panier)
+     */
     public DecoratorAccolade(AbstractFruit f) {
         super(f);
     }

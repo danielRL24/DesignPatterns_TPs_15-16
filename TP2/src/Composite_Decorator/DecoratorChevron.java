@@ -2,6 +2,10 @@ package Composite_Decorator;
 
 public class DecoratorChevron extends FruitDecorator {
 
+    /**
+     * Constructeur
+     * @param f : AbstractFruit à décorer (fruit ou panier)
+     */
     public DecoratorChevron(AbstractFruit f) {
         super(f);
     }

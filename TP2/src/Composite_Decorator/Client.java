@@ -9,11 +9,9 @@ public class Client {
     private Panier panier2;
     private Fruit ananas;
 
-    public static void main(String[] args) {
-        Client client = new Client();
-        client.menuPrincipal();
-    }
-
+    /**
+     * Constructeur
+     */
     public Client () {
         panier1 = new Panier();
         panier2 = new Panier();
@@ -24,8 +22,13 @@ public class Client {
         panier2.addFruit(panier1);
     }
 
+    /**
+     * Affichage du menu principal
+     *  - Affichage simple
+     *  - Affichage décoré
+     */
     public void menuPrincipal(){
-        System.out.println("MENU PRINCIPAL ----------------------");
+        System.out.println("MENU ---------------------------------");
         System.out.println("1. Affichage Simple");
         System.out.println("2. Affichage Decore");
 
@@ -56,8 +59,14 @@ public class Client {
         }
     }
 
+    /**
+     * Affichage du choix du décorateur
+     *  - {/}
+     *  - </>
+     *  - ///
+     */
     public void menuDecorator(){
-        System.out.println("MENU DECORATOR ----------------------");
+        System.out.println("MENU DECORATEUR ----------------------");
         System.out.println("1. Decorator {/}");
         System.out.println("2. Decorator </>");
         System.out.println("3. Decorator ///");
@@ -98,7 +107,6 @@ public class Client {
             System.out.println();
             decoPanier2.afficher();
 
-
         } catch (InputMismatchException e) {
             // Si l'utilisateur entre des données incorrectes
             System.err.println("La valeur entrée n'est pas valable !");
@@ -106,5 +114,15 @@ public class Client {
             // Fermer le fichier d'entrée dans tous les cas
             input.close();
         }
+    }
+
+
+    /**
+     * MAIN
+     * @param args
+     */
+    public static void main(String[] args) {
+        Client client = new Client();
+        client.menuPrincipal();
     }
 }

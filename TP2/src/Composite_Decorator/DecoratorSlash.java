@@ -2,6 +2,10 @@ package Composite_Decorator;
 
 public class DecoratorSlash extends FruitDecorator {
 
+    /**
+     * Constructeur
+     * @param f : AbstractFruit à décorer (fruit ou panier)
+     */
     public DecoratorSlash(AbstractFruit f) {
         super(f);
     }
