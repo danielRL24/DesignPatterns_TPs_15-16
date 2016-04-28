@@ -1,3 +1,5 @@
+package Composite_Decorator;
+
 public class Fruit implements AbstractFruit {
 
     private String nom;

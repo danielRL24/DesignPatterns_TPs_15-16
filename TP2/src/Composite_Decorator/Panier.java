@@ -1,3 +1,5 @@
+package Composite_Decorator;
+
 import java.util.ArrayList;
 
 public class Panier implements AbstractFruit{

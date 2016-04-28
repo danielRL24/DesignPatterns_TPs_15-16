@@ -1,3 +1,5 @@
+package Composite_Decorator;
+
 public class DecoratorAccolade extends FruitDecorator {
 
     public DecoratorAccolade(AbstractFruit f) {

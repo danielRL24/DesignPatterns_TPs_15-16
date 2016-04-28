@@ -1,3 +1,5 @@
+package Composite_Decorator;
+
 public abstract class FruitDecorator implements AbstractFruit{
     protected final AbstractFruit fruit;
 

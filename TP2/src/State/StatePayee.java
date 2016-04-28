@@ -1,3 +1,4 @@
+package State;
 
 public class StatePayee extends Statut {
 	
