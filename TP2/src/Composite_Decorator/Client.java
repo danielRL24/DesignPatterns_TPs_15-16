@@ -11,6 +11,10 @@ public class Client {
 
     /**
      * Constructeur
+	 *  - Création d'un fruit
+	 *  - Création de deux paniers :
+	 *    - 1er simple
+	 *    - 2ème contenant le 1er panier
      */
     public Client () {
         panier1 = new Panier();
@@ -45,9 +49,11 @@ public class Client {
                 case 1:
                 default:
                     ananas.afficher();
-                    System.out.println();
+                    System.out.println(" --> " + ananas.contientPeppin());
                     panier1.afficher();
+                    System.out.println(" --> " + panier1.contientPeppin());
                     panier2.afficher();
+                    System.out.println(" --> " + panier2.contientPeppin());
             }
 
         } catch (InputMismatchException e) {

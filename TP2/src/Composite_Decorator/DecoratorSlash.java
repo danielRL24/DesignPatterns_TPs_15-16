@@ -14,7 +14,11 @@ public class DecoratorSlash extends FruitDecorator {
     public void afficher() {
         System.out.print("/");
         fruit.afficher();
-        System.out.print("/" + fruit.contientPeppin());
+        System.out.print("/");
+        if(fruit.contientPeppin())
+            System.out.print("Avec Pepin");
+        else
+            System.out.print("Sans Pepin");
         System.out.print("/");
     }
 }
