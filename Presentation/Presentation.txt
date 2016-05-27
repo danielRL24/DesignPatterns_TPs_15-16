@@ -1,0 +1,55 @@
+-------------------------------------
+Présentation de Design Pattern
+-------------------------------------
+
+Bridge :
+--------
+- Nom: Bridge
+- Connus encore sous: Handle/Body
+- Classification: patron de structure, Objet
+- Objectif: 
+	- Permettre de découpler l'interface d'une classe et son implémentation. indépendantes
+	- La partie concrète peut alors varier, indépendamment de celle abstraite, tant qu'elle respecte le contrat de réécriture associé qui les lie (obligation de se conformer aux signatures des fonctions/méthodes, et de leurs fournir un corps physique d'implémentation).
+- Motivation:
+- Cas d'utilisation:
+- Structure:
+- Participants:
+- Collaboration:
+	- Abstraction transmet les demandes des clients à son objet Implementer
+- Conséquences:
+- Implémentation:
+- Exemple de code:
+- Utilisations connues:
+	- Ce modèle de structuration de la logique s'illustre notamment dans de nombreuses technologies d'accès éloigné, de communication distante, et d'envoi de message.
+	- Java : RPC & RMI
+- Patrons liés:
+	- Une AbstractFactory peut créer un Bridge
+---------------------------------------------------------------------------------------
+
+Façade :
+--------
+- Nom: Façade
+- Classification: patron de structure, Objet
+- Objectif: 
+	- Fournir une interface unifiée à un ensemble d'interfaces dans un sous-système complexe.
+	- Façade définit une interface de niveau supérieur qui rend le sous-système plus facile à utiliser. 
+- Motivation:
+	- Simplifier la complexité en fournissant une interface simple d'un sous-système. - -- Généralement, la façade est réalisée en réduisant les fonctionnalités de ce dernier, mais en fournissant toutes les fonctions nécessaires à la plupart des utilisateurs.
+- Cas d'utilisation:
+	- Fournir une interface simple pour la plupart des utilisateurs.
+	- Diminuer les dépendences entre client et sous-système.
+- Structure:
+- Participants:
+	- Facade
+		- Connait les classes responsables d'une certaine requête.
+		- Délègue la requête du client vers le sous-système approprié.
+- Collaboration:
+	- Le client communique avec le sous-système à travers la Facade.
+	- Celle-ci s'occupe alors de l'envoyer au bon objet du sous-système.
+	- Le client qui utilise la Facade n'as pas accès au sous-système.
+- Conséquences:
+- Implémentation:
+- Exemple de code:
+- Utilisaitons connues:
+	- La façade est utilisée pour simplifier l'utilisation de l'API.
+- Patrons liés:
